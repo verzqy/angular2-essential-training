@@ -3,7 +3,8 @@
     <h1>Media Watch List</h1>
     <p class="description">Keeping track of the media I want to watch.</p>
   </header>
-  <mw-media-item [mediaItem]="firstMediaItem" (delete)="onMediaItemDelete($event)" (preview)="onMediaItemPreview($event)"></mw-media-item>
-  <mw-media-item [mediaItem]="secondMediaItem" (delete)="onMediaItemDelete($event)" (preview)="onMediaItemPreview($event)"></mw-media-item>
+  <div style="display: inline-block" *ngFor="let mediaItem of mediaItems">
+    <mw-media-item [mediaItem]="mediaItem" (delete)="onMediaItemDelete($event)" (preview)="onMediaItemPreview($event)"></mw-media-item>
+  </div>
   <mw-popup [mediaItem]="item" *ngIf="item" (hide)="onPopupHide()"></mw-popup>
 </section>
