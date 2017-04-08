@@ -2,7 +2,10 @@
   <div style="text-align: right">
     <button class="closebtn" (click)="close()">X</button><br/>
   </div>
-  <mw-imgsw></mw-imgsw>
+  <div align="center">
+    <mw-imgsw *ngFor="let listImage of listImages" [listImage]="listImage"></mw-imgsw>
+    <button (click)="prevImg()">Prev</button> | <button (click)="nextImg()">Next</button>
+  </div>
   <p>Name : {{ mediaItem ? mediaItem.name : ""}}</p>
   <p>Genre : {{ mediaItem ? mediaItem.genre : ""}}</p>
   <p>Year : {{ mediaItem ? mediaItem.year : ""}}</p>

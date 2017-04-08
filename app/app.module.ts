@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { MediaItemComponent } from './media-item.component';
 import { PopupComponent } from './popup.component';
 import { ImageswitcherComponent } from './imageswitcher.component';
+import { ImageDirective } from './image.directive';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ImageswitcherComponent } from './imageswitcher.component';
     AppComponent,
     MediaItemComponent,
     PopupComponent,
-    ImageswitcherComponent
+    ImageswitcherComponent,
+    ImageDirective
   ],
   bootstrap: [
     AppComponent
