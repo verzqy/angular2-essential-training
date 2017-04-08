@@ -36,7 +36,6 @@ export class PopupComponent {
     for (var image of this.listImages) {
       image.isVisible = false;
     }
-    console.log(x);
     this.listImages[x].isVisible = true;
   }
   nextImg() {

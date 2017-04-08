@@ -1,4 +1,9 @@
-img {
-  width: 50%;
-  height: 50%;
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.image.hovering {
+  width: 150px;
+  height: 150px;
 }
