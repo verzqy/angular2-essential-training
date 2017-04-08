@@ -1,3 +1,6 @@
 <div>
-  <img src="\media\angularjs.png" alt="">
+  <img 
+  *ngFor="let listImage of listImages" 
+  [mediaItem]="mediaItem" 
+  src="\media\angularjs.png" alt="">
 </div>
