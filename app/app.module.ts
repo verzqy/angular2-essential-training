@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { MediaItemComponent } from './media-item.component';
 import { PopupComponent } from './popup.component';
+import { ImageswitcherComponent } from './imageswitcher.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PopupComponent } from './popup.component';
   declarations: [
     AppComponent,
     MediaItemComponent,
-    PopupComponent
+    PopupComponent,
+    ImageswitcherComponent
   ],
   bootstrap: [
     AppComponent
