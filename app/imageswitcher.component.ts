@@ -6,5 +6,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['app/imageswitcher.component.css']
 })
 export class ImageswitcherComponent {
+@Input() listImage;
 
 }
